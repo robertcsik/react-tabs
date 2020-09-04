@@ -33,7 +33,6 @@ export default class TabPanel extends Component {
       id,
       selected,
       selectedClassName,
-      tabId,
       ...attributes
     } = this.props;
 
@@ -45,7 +44,6 @@ export default class TabPanel extends Component {
         })}
         role="tabpanel"
         id={id}
-        aria-labelledby={tabId}
       >
         {forceRender || selected ? children : null}
       </div>
